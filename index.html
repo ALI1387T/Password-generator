@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Password generator</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Password Generator</h1>
+            <h2 class="password">ads32</h2>
+            <form class="form">
+                <div class="password-length-lable">
+                    <h2>Password Length</h2>
+                    <h2 class="show-password-length-lable">8</h2>
+                </div>
+                <input type="range" class="password-length" min="4" max="30" value="8" />
+
+                <div class="input-container">
+                    <input type="checkbox" id="upper" checked="true" />
+                    <label class="checkbox-lable" for="upper">Include Uppercase Letter</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="checkbox" id="lower" checked="true" />
+                    <label class="checkbox-lable" for="lower">Include Lowercase Letter</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="checkbox" id="numbers" />
+                    <label class="checkbox-lable" for="numbers">Include Numbers</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="checkbox" id="symbols" />
+                    <label class="checkbox-lable" for="symbols">Include Symbols</label>
+                </div>
+
+                <input type="submit" value="Generate" class="generate-btn" />
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
